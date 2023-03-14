@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools {
+    maven 'MavenDefault'
+  }
   stages {
       stage('Cleaning Stage') {
         steps {
